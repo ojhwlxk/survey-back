@@ -1,0 +1,140 @@
+{
+  "id": 1,
+  "title": "제목2",
+  "createdBy": "홍길동",
+  "status": "READY",
+  "startDate": "20211213:120301",
+  "endDate": "20211218:120301",
+  "createdAt": "20211113:120301",
+  "updatedAt": "20211113:120301",
+  "questions": [
+    {
+      "id": 1,
+      "content": "RADIO 질문2",
+      "type": "RADIO",
+      "min": 1,
+      "max": 1,
+      "order": 1,
+      "required": true,
+      "choice": [
+        {
+          "id": 1,
+          "content": "YES2"
+        },
+        {
+          "id": 2,
+          "content": "NO2"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "content": "CHECK 질문2 (필수)",
+      "type": "CHECK",
+      "min": 1,
+      "max": 1,
+      "order": 2,
+      "required": true,
+      "choice": [
+        {
+          "id": 3,
+          "content": "Fever2"
+        },
+        {
+          "id": 4,
+          "content": "Cough2"
+        },
+        {
+          "id": 5,
+          "content": "Nothing2"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "content": "CHECK 질문22 (선택)",
+      "type": "CHECK",
+      "min": 0,
+      "max": 3,
+      "order": 3,
+      "required": false,
+      "choice": [
+        {
+          "id": 6,
+          "content": "Fever2"
+        },
+        {
+          "id": 7,
+          "content": "Cough2"
+        },
+        {
+          "id": 8,
+          "content": "Nothing2"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "order": 4,
+      "content": "SHORT_TEXT 질문2",
+      "type": "SHORT_TEXT"
+    },
+    {
+      "id": 5,
+      "order": 5,
+      "content": "LONG_TEXT 질문2",
+      "type": "LONG_TEXT"
+    },
+    {
+      "content": "EX_LONG_TEXT 질문2",
+      "order": 6,
+      "type": "LONG_TEXT"
+    },
+    {
+      "content": "EX_CHECK(선택)",
+      "type": "CHECK",
+      "min": 0,
+      "max": 3,
+      "order": 7,
+      "required": false,
+      "choice": [
+        {
+          "content": "FXX"
+        },
+        {
+          "content": "CXX"
+        },
+        {
+          "content": "DXX"
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "type": "RADIO",
+      "questionId": 1,
+      "content": [1]
+    },
+    {
+      "type": "CHECK",
+      "questionId": 2,
+      "content": [4]
+    },
+    {
+      "type": "CHECK",
+      "questionId": 3,
+      "content": [3, 4]
+    },
+    {
+      "type": "SHORT_TEXT",
+      "questionId": 4,
+      "summary": "짧은 답장"
+    },
+    {
+      "type": "LONG_TEXT",
+      "questionId": 5,
+      "summary": "긴 답변"
+    }
+  ]
+}

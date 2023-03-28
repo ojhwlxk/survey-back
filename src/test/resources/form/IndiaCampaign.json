@@ -1,0 +1,58 @@
+{
+  "title": "PharmCADD INdia Disease Control and Prevention",
+  "createdBy": "victor@pharmcadd.com",
+  "target" :
+  {
+    "memberIds": [
+    ],
+    "orgCodes": [
+      "ORG0002",
+      "ORG0009"
+    ]
+  },
+  "startDate": "",
+  "endDate": "",
+  "questions": [
+    {
+      "content": "Are you suffering from any of the following symptoms?",
+      "type": "CHECK",
+      "min": 1,
+      "max": 1,
+      "required": true,
+      "choice": [
+        "Fever",
+        "Cough",
+        "Respiratory distress",
+        "Shivers"
+      ]
+    },
+    {
+      "content": "Do any of your family member or roommate have symptoms mentioned above",
+      "type": "CHECK",
+      "min": 1,
+      "max": 1,
+      "required": true,
+      "choice": [
+        "Fever",
+        "Cough",
+        "Respiratory distress",
+        "Shivers"
+      ]
+    },
+    {
+      "content": "Have you visited any place, where patients with confirmed COVID-19 infection have reportedly been?",
+      "type": "SHORT_TEXT",
+      "required": true
+    },
+    {
+      "content": "Have you visited any place, Any public facilities, crowded places or events?",
+      "type": "SHORT_TEXT",
+      "required": true
+    },
+    {
+      "content": "Did you receive any communication/Guide from Government Health Officials? If yes, please provide details to hr@pharmcadd.com",
+      "type": "SHORT_TEXT",
+      "required": true
+    }
+  ]
+}

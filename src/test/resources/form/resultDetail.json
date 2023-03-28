@@ -1,0 +1,63 @@
+{
+  "total": 1,
+  "content": [
+    {
+      "userId": 1,
+      "name": "홍길동",
+      "answer": [
+        {
+          "questionId": 1,
+          "choiceId": [
+            1
+          ]
+        },
+        {
+          "questionId": 2,
+          "choiceId": [
+            3,
+            4
+          ]
+        },
+        {
+          "questionId": 3,
+          "reply": "짧은 답변"
+        },
+        {
+          "questionId": 4,
+          "mention": "긴 답변"
+        }
+      ]
+    },
+    {
+      "userId": 2,
+      "name": "길동이",
+      "answer": [
+        {
+          "questionId": 1,
+          "choiceId": [
+            2
+          ]
+        },
+        {
+          "questionId": 2,
+          "choiceId": [
+            4
+          ]
+        },
+        {
+          "questionId": 3,
+          "reply": "짧은 답변"
+        },
+        {
+          "questionId": 4,
+          "mention": "긴 답변"
+        }
+      ]
+    },
+    {
+      "userId": 3,
+      "name": "흰둥이",
+      "answer": null
+    }
+  ]
+}

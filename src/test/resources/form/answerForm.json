@@ -1,0 +1,30 @@
+{
+  "campaignId": 2,
+  "answers": [
+    {
+      "type": "RADIO",
+      "questionId": 1,
+      "content": [1]
+    },
+    {
+      "type": "CHECK",
+      "questionId": 2,
+      "content": [4]
+    },
+    {
+      "type": "CHECK",
+      "questionId": 3,
+      "content": [3, 4]
+    },
+    {
+      "type": "SHORT_TEXT",
+      "questionId": 4,
+      "summary": "짧은 답장"
+    },
+    {
+      "type": "LONG_TEXT",
+      "questionId": 5,
+      "summary": "긴 답변"
+    }
+  ]
+}

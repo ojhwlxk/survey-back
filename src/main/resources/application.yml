@@ -1,0 +1,62 @@
+server:
+  port: 34090
+  shutdown: graceful
+  error:
+    include-binding-errors: always
+    include-exception: true
+    include-message: always
+    include-stacktrace: never
+spring:
+  main:
+    allow-circular-references: true
+  profiles:
+    active: local
+  application:
+    name: pharmcadd-form
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+      enabled: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: mdss
+    password: ph4rmc4dd
+    hikari:
+      pool-name: ${spring.application.name}-pool
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:34090/.well-known/jwks.json
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+logging:
+  level:
+    root: info
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pharmcadd-form
+logging:
+  level:
+    org.jooq: debug
+storage:
+  upload-dir: ./storage
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: jdbc:postgresql://10.128.1.18:5432/pharmcadd-form
+storage:
+  upload-dir: ./storage
+logging:
+  file:
+    path: ${user.home}/${spring.application.name}/dist/back-end/logs
